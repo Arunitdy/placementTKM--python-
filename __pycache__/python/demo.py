@@ -22,14 +22,13 @@ def sum(num):
     for i in range(1,num):
         if ( num % i == 0 ):
             sum = sum + i
+            
+    print("sum:",sum)
     return sum
 
 sum1=int(sum(number1))
 sum2=int(sum(number2))
 
-print("sum1:",sum1," sum2:",sum2)
+print(True) if (sum2 == number1 and sum1 == number2) else print(False)
 
-if ( sum2 == number1 and sum1 == number2 ):
-    print(True)
-else:
-    print(False)
+  
