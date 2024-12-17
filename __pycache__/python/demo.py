@@ -12,20 +12,20 @@ print()
 
 #amicable number (the sum of divisor of A is equal to B and the sum of divisor of B is equal to A)
 
-sum1=int(0)
-sum2=int(0)
 
 number1=220  #int(input("enter the number1:"))
 
 number2=284   #int(input("enter the number2:"))
 
-for i in range(1,number1):
-    if ( number1 % i == 0 ):
-        sum1 = sum1 + i
+def sum(num):
+    sum=int(0)
+    for i in range(1,num):
+        if ( num % i == 0 ):
+            sum = sum + i
+    return sum
 
-for i in range(1,number2):
-    if ( number2 % i == 0 ):
-        sum2 = sum2 + i
+sum1=int(sum(number1))
+sum2=int(sum(number2))
 
 print("sum1:",sum1," sum2:",sum2)
 
