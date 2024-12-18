@@ -27,3 +27,12 @@ print("total price:",sum(bill2(product, price, cart)))
 
 bill=[price[i] * cart[i] for i in range(len(product))]
 print(bill)
+
+#to generate a sequense of number 1 to 10
+
+a=list(range(1,11)) 
+
+print("a:", a)
+
+b=[n ** 2 for n in a]
+print("b:",b)
