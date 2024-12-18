@@ -42,3 +42,8 @@ print("b:",b)
 c=list(map(lambda n:n ** 2 ,a))
 
 print("c", c)
+
+#random
+import random
+nums=[random.randint(1,10) for i in range(0,10)]
+print("nums:",nums)
