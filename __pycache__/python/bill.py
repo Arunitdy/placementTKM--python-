@@ -51,3 +51,9 @@ print("nums:",nums)
 #filter of even 
 b=[num for num in nums if num % 2!=0]
 print("odd:",b)
+
+# or 
+
+c=list(filter(lambda n:n % 2!= 0,nums))
+
+print("odd c:",c)
