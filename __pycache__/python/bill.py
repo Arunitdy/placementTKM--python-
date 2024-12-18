@@ -22,3 +22,8 @@ def bill2(product, price, cart):
     return bill
 
 print("total price:",sum(bill2(product, price, cart)))
+
+#single line
+
+bill=[price[i] * cart[i] for i in range(len(product))]
+print(bill)
