@@ -48,11 +48,18 @@ import random
 nums=[random.randint(1,10) for i in range(0,10)]
 print("nums:",nums)
 
+# filter using for
+a=[]
+for num in nums:
+    if num%2!=0:
+        a.append(num)
+print("a:",a)
+
 #filter of even 
 b=[num for num in nums if num % 2!=0]
 print("odd:",b)
 
-# or 
+# or using filter
 
 c=list(filter(lambda n:n % 2!= 0,nums))
 
