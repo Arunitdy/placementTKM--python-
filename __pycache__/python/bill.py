@@ -47,3 +47,7 @@ print("c", c)
 import random
 nums=[random.randint(1,10) for i in range(0,10)]
 print("nums:",nums)
+
+#filter of even 
+b=[num for num in nums if num % 2!=0]
+print("odd:",b)
