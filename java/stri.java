@@ -12,26 +12,23 @@ class stri {
         }
         System.out.println(count);
     }
-
-    static void subSequence(String str, String current, int index) {
-
-       if (index == str.length()) {
+    static void subSequence (String str, String current, int index) {
+        if (index == str.length()) {
             System.out.println(current);
-            return;
-       }
-       
-       subSequence(str, current, index+1);
-       subSequence(str, current + str.charAt(index), index+1);
+            return ;
+        }
+        subSequence(str, current, index+1);
+        subSequence(str, current+str.charAt(index) , index+1);
     }
 
     public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("enter the string:");
-        String str = "abc"; //sc.nextLine();
+        String str = "abcd"; //sc.nextLine();
 
         substring(str);
         System.out.println("substring :" + str.length() * (str.length() + 1)/2);
-      //  subSequence(str, "", 0);
+        subSequence(str, "", 0);
         System.out.println("Subsequences of the string:" + Math.pow(2, str.length()));
         
         sc.close();
