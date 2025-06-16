@@ -53,7 +53,7 @@ public class lngtComnSubse {
 
     }
     public static void main(String []args) {
-        System.out.println("\n" + longestCommonSubsequence( text1, text2));
+        System.out.println("\n longestCommonSubsequence : " + longestCommonSubsequence( text1, text2));
 
     }
 }
