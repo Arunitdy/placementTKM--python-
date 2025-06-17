@@ -24,7 +24,7 @@ public class PandC {
     }
 
     public static void main(String[] args) {
-        String input = "ABC";
+        String input = "ABCd";
 
         System.out.println("All Permutations of " + input + ":");
         findPermutations(input, "");
