@@ -12,8 +12,8 @@ public class PandC {
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
             String remaining = str.substring(0, i) + str.substring(i + 1);
-            findPermutations(remaining, result + ch);
             System.out.println("Current char: " + ch + ", Remaining: " + remaining + ", Result: " + result);
+            findPermutations(remaining, result + ch);
         }
     }
 
