@@ -14,7 +14,14 @@ public class PandC {
     }
 
     // COMBINATION FUNCTION
-    
+    public static void findCombinations (String str, String result, int index) {
+        if (!result.isEmpty()) {
+            System.out.println(result);
+        }
+        for (int i = index; i < str.length(); i++) {
+            findCombinations(str, result + str.charAt(i), i+1);
+        }
+    }
 
     public static void main(String[] args) {
         String input = "ABC";
